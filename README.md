@@ -130,7 +130,3 @@ Feature: Login Functionality
     Then User should be redirected to the dashboard
 ```
 ---
-
-
-Do you want me to prepare **that CI/CD + screenshots setup** for you so it’s 100% resume-ready?
-```
