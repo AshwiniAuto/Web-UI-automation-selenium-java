@@ -34,15 +34,16 @@ The framework is designed to be **scalable, maintainable, and easily integrated*
 src
 ├── main
 │   └── java
-│       ├── base        # BaseTest / BasePage classes
-│       ├── pages       # Page Object Model classes
-│       ├── utils       # Utility & wrapper methods
+│       ├── base                # BaseTest / BasePage classes
+│       ├── pages               # Page Object Model classes
+│       ├── wrappermethod       # Utility & wrapper methods
 │
 ├── test
 │   └── java
 │       ├── stepDefinitions  # Step definitions for Cucumber
 │       ├── runners          # Runner classes
 │       ├── hooks            # Hooks for @Before & @After scenarios
+│       ├── test
 │
 ├── test
 │   └── resources
@@ -69,55 +70,11 @@ src
 
 ---
 
-## 📸 Sample Report
-### Extent Report
-![Extent Report Screenshot](reports/extent-report-sample.png)
-
-### HTML Cucumber Report
-![HTML Report Screenshot](reports/html-report-sample.png)
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
+## Technology Used
 - **Java 11+**
 - **Maven 3+**
 - IDE (Eclipse/IntelliJ)
 - Git
-
-### Clone the repository
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
-````
-
-### Install dependencies
-
-```bash
-mvn clean install
-```
-
-### Run tests
-
-#### Run all tests:
-
-```bash
-mvn clean test
-```
-
-#### Run with TestNG suite:
-
-```bash
-mvn clean test -DsuiteXmlFile=testng.xml
-```
-
-#### Run specific Cucumber tag:
-
-```bash
-mvn clean test -Dcucumber.filter.tags="@Smoke"
-```
-
 ---
 
 ## ⚙️ Configuration
@@ -135,8 +92,6 @@ This project includes a **GitHub Actions workflow**:
 * Runs on every push & pull request.
 * Executes the full automation suite.
 * Uploads **Extent HTML Reports** as build artifacts.
-
-Example Workflow File:
 
 ```yaml
 name: CI - BDD Cucumber Tests
@@ -174,27 +129,8 @@ Feature: Login Functionality
     And Clicks on login button
     Then User should be redirected to the dashboard
 ```
-
 ---
 
-## 🧑‍💻 Author
-
-**Your Name**
-📧 [your.email@example.com](mailto:your.email@example.com)
-💼 [LinkedIn](https://www.linkedin.com/in/yourprofile)
-📂 [GitHub](https://github.com/YOUR-USERNAME)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
----
-
-If you want, I can also create **a matching GitHub Actions YAML file** and **sample screenshots folder** so when someone visits your repo, they immediately see working reports and proof your framework runs end-to-end.  
 
 Do you want me to prepare **that CI/CD + screenshots setup** for you so it’s 100% resume-ready?
 ```
