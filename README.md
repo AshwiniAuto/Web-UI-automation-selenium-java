@@ -1,10 +1,3 @@
-Got it ✅ — you want a **professional README.md** that will make your **BDD Cucumber + Java + TestNG + Extent Reports + CI/CD** framework look polished for recruiters and GitHub visitors.
-
-Here’s a complete **resume-ready README** you can paste into your repo and adjust project name/links:
-
----
-
-```markdown
 # 🥒 BDD Cucumber Automation Framework (Java + TestNG + Maven)
 
 ## 📌 Overview
